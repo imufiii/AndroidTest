@@ -23,4 +23,19 @@ class ExampleUnitTest {
     @Test fun emailValidator_InCorrectEmailSample_ReturnsFalse (){
         assertFalse(EmailValidator.isValidEmail("23@abc"))
     }
+    @Test fun emailValidator_InCorrectEmailSampleDoubleDot_ReturnsFalse (){
+        assertFalse(EmailValidator.isValidEmail("123@abc..com"))
+    }
+    @Test fun emailValidator_InCorrectEmailSampleNoUserName_ReturnsFalse (){
+        assertFalse(EmailValidator.isValidEmail("@abc.com"))
+    }
+    @Test fun emailValidator_InCorrectEmailSampleNoDomain_ReturnsFalse (){
+        assertFalse(EmailValidator.isValidEmail("testing123"))
+    }
+    @Test fun emailValidator_NoEmail_ReturnsFalse (){
+        assertFalse(EmailValidator.isValidEmail(""))
+    }
+    @Test fun emailValidator_NullEmail_ReturnsFalse () {
+        assertFalse(EmailValidator.isValidEmail(null))
+    }
 }
