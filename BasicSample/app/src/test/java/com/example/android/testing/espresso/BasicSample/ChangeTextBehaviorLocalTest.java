@@ -1,5 +1,5 @@
+/** Ignore this file */
 package com.example.android.testing.espresso.BasicSample;
-
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
