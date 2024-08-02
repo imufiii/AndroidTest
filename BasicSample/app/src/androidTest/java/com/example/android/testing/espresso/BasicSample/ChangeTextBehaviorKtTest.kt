@@ -1,3 +1,4 @@
+/* this is the file for all the methods for instrumented testing */
 package com.example.android.testing.espresso.BasicSample
 
 import androidx.test.ext.junit.rules.activityScenarioRule
